@@ -7,6 +7,10 @@ on:
 
 jobs:
   build-and-deploy:
+    # This is crucial so GitHub Actions can push to gh-pages
+    permissions:
+      contents: write
+
     runs-on: ubuntu-latest
 
     steps:
