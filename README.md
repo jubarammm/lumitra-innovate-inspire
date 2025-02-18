@@ -5,7 +5,7 @@
 **URL**: https://lovable.dev/projects/0191db07-deb7-4b6a-9d5c-4f4aa1135ec2
 
 ## How can I edit this code?
-
+Testing GitHub Actions deployment
 There are several ways of editing your application.
 
 **Use Lovable**
