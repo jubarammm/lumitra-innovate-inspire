@@ -10,30 +10,30 @@
 
 @layer base {
   :root {
-    --background: 0 0% 0%;
-    --foreground: 0 0% 100%;
-    --card: 0 0% 3%;
-    --card-foreground: 0 0% 100%;
-    --popover: 0 0% 3%;
-    --popover-foreground: 0 0% 100%;
+    --background: 196 100% 97%;
+    --foreground: 196 100% 10%;
+    --card: 196 30% 95%;
+    --card-foreground: 196 100% 10%;
+    --popover: 196 30% 95%;
+    --popover-foreground: 196 100% 10%;
     --primary: 196 100% 50%;
     --primary-foreground: 0 0% 0%;
-    --secondary: 0 0% 15%;
-    --secondary-foreground: 0 0% 100%;
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 65%;
+    --secondary: 196 30% 90%;
+    --secondary-foreground: 196 100% 10%;
+    --muted: 196 30% 90%;
+    --muted-foreground: 196 50% 40%;
     --accent: 196 100% 50%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 100%;
-    --border: 0 0% 15%;
-    --input: 0 0% 15%;
+    --border: 196 30% 85%;
+    --input: 196 30% 85%;
     --ring: 196 100% 50%;
     --radius: 0.5rem;
   }
 
   * {
-    @apply border-border selection:bg-white/10 selection:text-white;
+    @apply border-border selection:bg-primary/20 selection:text-foreground;
   }
 
   body {
@@ -51,7 +51,7 @@
   }
   
   .glass-nav {
-    @apply bg-black/50 backdrop-blur-md border-b border-white/10;
+    @apply bg-primary/10 backdrop-blur-md border-b border-primary/20;
   }
 
   .section-padding {
