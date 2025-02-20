@@ -12,6 +12,9 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center section-padding">
         <div className="max-w-4xl mx-auto text-center">
+          <div className="mb-8 animate-fade-in">
+            <img src="/logo.png" alt="Lumitra Logo" className="h-20 md:h-24 mx-auto mb-6" />
+          </div>
           <h1 className="font-thunder text-5xl md:text-7xl lg:text-8xl mb-6 animate-fade-in">
             LUMITRA
           </h1>
@@ -25,7 +28,7 @@ const Index = () => {
             <Button
               variant="outline"
               size="lg"
-              className="border-white/20 hover:bg-white hover:text-black transition-all duration-300"
+              className="border-primary/20 hover:bg-primary hover:text-black transition-all duration-300"
             >
               Get Started
             </Button>
@@ -54,9 +57,9 @@ const Index = () => {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="p-8 rounded-lg bg-secondary/50 border border-white/10 hover:border-white/20 transition-all duration-300"
+                className="p-8 rounded-lg bg-secondary/50 border border-white/10 hover:border-primary/30 group transition-all duration-300"
               >
-                <h3 className="font-thunder text-2xl mb-4">{service.title}</h3>
+                <h3 className="font-thunder text-2xl mb-4 group-hover:text-primary transition-colors">{service.title}</h3>
                 <p className="text-white/70">{service.description}</p>
               </div>
             ))}
@@ -85,19 +88,19 @@ const Index = () => {
             <form className="space-y-6">
               <Input
                 placeholder="Your Name"
-                className="bg-black/20 border-white/10 focus:border-white/30"
+                className="bg-black/20 border-white/10 focus:border-primary/50"
               />
               <Input
                 type="email"
                 placeholder="Your Email"
-                className="bg-black/20 border-white/10 focus:border-white/30"
+                className="bg-black/20 border-white/10 focus:border-primary/50"
               />
               <Textarea
                 placeholder="Your Message"
-                className="bg-black/20 border-white/10 focus:border-white/30"
+                className="bg-black/20 border-white/10 focus:border-primary/50"
                 rows={4}
               />
-              <Button className="w-full bg-white text-black hover:bg-white/90">
+              <Button className="w-full bg-primary text-black hover:bg-primary/90">
                 Send Message
               </Button>
             </form>
